@@ -1,9 +1,11 @@
+import "./Styling/navigation.css";
+
 function Navigation() {
   return (
     <div className="Navigation">
-      <h1>Home</h1>
-      <h1>My BookShelf</h1>
-      <h1>Logout</h1>
+      <h3>Browse library</h3>
+      <h3>My BookShelf</h3>
+      <h3>Logout</h3>
     </div>
   );
 }
