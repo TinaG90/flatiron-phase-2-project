@@ -1,4 +1,4 @@
-function library() {
-  return Consol.log("Library composnent");
+function Library() {
+  return console.log("Library composnent");
 }
-export default library;
+export default Library;

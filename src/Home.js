@@ -1,4 +1,4 @@
 function Home() {
-  return Consol.log("Home composnent");
+  return console.log("Home composnent");
 }
 export default Home;

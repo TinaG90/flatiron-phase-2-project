@@ -1,4 +1,4 @@
 function BookShelf() {
-  return Consol.log("Booshelf composnent");
+  return console.log("BooKshelf composnent");
 }
 export default BookShelf;
