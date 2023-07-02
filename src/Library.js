@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
+import "./Styling/library.css";
 
 function Library() {
   const [data, setData] = useState([]);
@@ -17,7 +18,7 @@ function Library() {
 
   const listOfItems = data.map((item) => {
     return (
-      <div key={uuidv4()}>
+      <div key={uuidv4()} className="Img-Div">
         <img src={item.image} alt={item.name}></img>
         <p>{item.name}</p>
       </div>
@@ -27,7 +28,7 @@ function Library() {
   return (
     <div>
       <h3>This Is My My Library</h3>
-      <div className="Item-Image">{listOfItems}</div>
+      <div className="Image-Container">{listOfItems}</div>
     </div>
   );
 }

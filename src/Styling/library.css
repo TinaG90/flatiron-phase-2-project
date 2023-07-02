@@ -1,4 +1,21 @@
-.Item-Image {
-    display: flexbox;
-    
+.Image-Container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+      }
+.Img-Div {
+    max-width: 40%;
+    max-height: 40%;
 }
+      
+ img  {
+        max-width: 40%;
+        max-height: 40%;
+      }
+p {
+    font-size: larger;
+   
+}
+      
