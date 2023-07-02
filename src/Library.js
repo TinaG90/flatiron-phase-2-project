@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 function Library() {
   const [data, setData] = useState([]);
@@ -13,26 +14,20 @@ function Library() {
   useEffect(() => {
     fetchData();
   }, []);
-  console.log(data);
 
-  const renderData = data.map(() => {
-    const img = (
-      <img src={data.image} alt="Item-Image">
-        {data.name}
-      </img>
+  const listOfItems = data.map((item) => {
+    return (
+      <div key={uuidv4()}>
+        <img src={item.image} alt={item.name}></img>
+        <p>{item.name}</p>
+      </div>
     );
-    // return (
-    //   <div>
-    //     <img src={data.imageUrl} alt="Item-Image">
-    //       {data.name}
-    //     </img>
-    //   </div>
-    // );
   });
-
+  console.log(listOfItems);
   return (
     <div>
       <h3>This Is My My Library</h3>
+      <div className="Item-Image">{listOfItems}</div>
     </div>
   );
 }
