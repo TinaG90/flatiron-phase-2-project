@@ -1,6 +1,7 @@
 .Navigation {
-    display: flexbox;
-    text-align: center;
+    display: flex;
+    text-align:center;
+    justify-content: space-evenly;
     font-size: calc(10px + 2vmin);
 
 }
